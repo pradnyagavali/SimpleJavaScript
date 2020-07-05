@@ -1,0 +1,2 @@
+# SimpleJavaScript
+simple javascript code
