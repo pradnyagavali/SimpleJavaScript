@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change Body Color</title>
+<script type="text/javascript">
+	function changecolor(id){
+		document.body.style.background = document.getElementById(id).innerHTML ;
+	}
+
+</script>
+<style type="text/css"> 
+	body{
+		margin:0;
+		padding: 0;
+		background: #34495e;
+	}
+	.box{
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		padding: 5px;
+		background: #f1f1f1;
+	}
+	.box a{
+		width: 40px;
+		height: 40px;
+		text-indent: -9999px;
+		float: left;
+		margin:5px;
+	}
+	#red{
+		background: red;
+	}
+
+	#blue{
+		background:blue;
+	}
+
+	#green{
+		background:green;
+	}
+
+	#grey{
+		background: grey;
+	}
+	#yellow{
+		background:yellow;
+	}
+	#orange{
+		background:orange;
+	}
+	.border{
+	border:  5px solid black;
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 630px;
+	}
+	p {
+		  position: relative;
+		  font-family: sans-serif;
+		  text-transform: uppercase;
+		  font-size: 2em;
+		  letter-spacing: 4px;
+		  overflow: hidden;
+		  background: linear-gradient(90deg, #000, #fff, #000);
+		  background-repeat: no-repeat;
+		  background-size: 80%;
+		  animation: animate 3s linear infinite;
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+		}
+
+		@keyframes animate {
+		  0% {
+		    background-position: -500%;
+		  }
+		  100% {
+		    background-position: 500%;
+		  }
+		}
+ 
+
+</style>
+</head>
+<body>
+	<div class="border">
+		<p>Change Body Colour By Clicking Icon Colour</p>
+		<hr>
+		<div class="box">
+			<a onclick="changecolor('red')" id="red">red</a>
+			<a onclick="changecolor('blue')" id="blue">blue</a>
+			<a onclick="changecolor('green')" id="green">green</a>
+			<a onclick="changecolor('grey')" id="grey">grey</a>
+			<a onclick="changecolor('yellow')" id="yellow">yellow</a>
+			<a onclick="changecolor('orange')" id="orange">orange</a>
+		</div>
+    </div>
+
+</body>
+</html>
